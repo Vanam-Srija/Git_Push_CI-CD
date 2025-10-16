@@ -1,0 +1,20 @@
+# .github/workflows/trigger-doc-gen.yml
+name: Trigger iFlow Doc Generation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'IntegrationFlows/UnZip/Get_Data_SV/src/main/resources/scenarioflows/integrationflow/**'
+
+jobs:
+  notify-python-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Python Repo Workflow via Repository Dispatch
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.PYTHON_REPO_TOKEN }}
+          repository: Vanam-Srija/Project_Sample
+          event-type: generate-iflow-doc
