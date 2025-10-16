@@ -16,5 +16,5 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.PYTHON_REPO_TOKEN }}
-          repository: Vanam-Srija/Project_Sample
+          repository: Vanam-Srija/Doc_Generating_Code
           event-type: generate-iflow-doc
