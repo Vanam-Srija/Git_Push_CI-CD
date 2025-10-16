@@ -17,4 +17,4 @@ jobs:
         with:
           token: ${{ secrets.PYTHON_REPO_TOKEN }}
           repository: Vanam-Srija/Doc_Generating_Code
-          event-type: generate-iflow-doc
+          event-type: generate-iflow-docs
