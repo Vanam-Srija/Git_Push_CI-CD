@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - 'IntegrationFlows/UnZip/TEST_01/src/main/resources/scenarioflows/integrationflow/**'
+      - 'IntegrationFlows/UnZip/EDI_850_TO_IDOC_1809_ORDER/src/main/resources/scenarioflows/integrationflow/**'
 
 jobs:
   notify-python-repo:
