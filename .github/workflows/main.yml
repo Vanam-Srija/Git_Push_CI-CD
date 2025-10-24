@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - 'IntegrationFlows/UnZip/Get_Data_SV/src/main/resources/scenarioflows/integrationflow/**'
+      - 'IntegrationFlows/UnZip/TEST_01/src/main/resources/scenarioflows/integrationflow/**'
 
 jobs:
   notify-python-repo:
