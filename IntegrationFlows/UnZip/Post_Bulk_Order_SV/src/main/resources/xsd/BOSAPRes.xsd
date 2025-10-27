@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xs:element name="batchPartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="batchChangeSetResponse">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="batchChangeSetPartResponse">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="headers">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Accept" type="xs:string" minOccurs="0"/>
+                          <xs:element name="location" type="xs:string" minOccurs="0"/>
+                          <xs:element name="etag" type="xs:string" minOccurs="0"/>
+                          <xs:element name="Accept-Language" type="xs:string" minOccurs="0"/>
+                          <xs:element name="Content-Length" type="xs:string" minOccurs="0"/>
+                          <xs:element name="sap-message" type="xs:string" minOccurs="0"/>
+                          <xs:element name="dataserviceversion" type="xs:string" minOccurs="0"/>
+                          <xs:element name="Content-Type" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="statusInfo" type="xs:string"/>
+                    <xs:element name="contentId" type="xs:string" minOccurs="0"/>
+                    <xs:element name="body">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CreationDate" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SalesContractValidityPerdUnit" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SalesContractType" type="xs:string"/>
+                          <xs:element name="CreatedByUser" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SalesDistrict" type="xs:string"/>
+                          <xs:element name="SlsContractFollowUpActionDate" type="xs:string" minOccurs="0"/>
+                          <xs:element name="TransactionCurrency" type="xs:string"/>
+                          <xs:element name="CustomerPurchaseOrderDate" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SalesContractSignedDate" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SalesContract" type="xs:string"/>
+                          <xs:element name="SalesContractValidityEndDate" type="xs:dateTime"/>
+                          <xs:element name="IncotermsTransferLocation" type="xs:string" minOccurs="0"/>
+                          <xs:element name="IncotermsVersion" type="xs:string" minOccurs="0"/>
+                          <xs:element name="RetailAdditionalCustomerGrp7" type="xs:string" minOccurs="0"/>
+                          <xs:element name="RetailAdditionalCustomerGrp8" type="xs:string" minOccurs="0"/>
+                          <xs:element name="RetailAdditionalCustomerGrp6" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SalesGroup" type="xs:string" minOccurs="0"/>
+                          <xs:element name="RetailAdditionalCustomerGrp9" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SalesContractDate" type="xs:dateTime"/>
+                          <xs:element name="OrganizationDivision" type="xs:string"/>
+                          <xs:element name="ReferenceSDDocumentCategory" type="xs:string" minOccurs="0"/>
+                          <xs:element name="ContractManualCompletion" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SalesDocApprovalStatus" type="xs:string" minOccurs="0"/>
+                          <xs:element name="IncotermsClassification" type="xs:string" minOccurs="0"/>
+                          <xs:element name="TotalCreditCheckStatus" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SalesContractValidityPerdCat" type="xs:string" minOccurs="0"/>
+                          <xs:element name="PricingDate" type="xs:dateTime"/>
+                          <xs:element name="PaymentMethod" type="xs:string" minOccurs="0"/>
+                          <xs:element name="FashionCancelDate" type="xs:string" minOccurs="0"/>
+                          <xs:element name="DistributionChannel" type="xs:string"/>
+                          <xs:element name="NmbrOfSalesContractValdtyPerd" type="xs:integer"/>
+                          <xs:element name="OverallSDProcessStatus" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SoldToParty" type="xs:string"/>
+                          <xs:element name="TotalNetAmount" type="xs:decimal"/>
+                          <xs:element name="OverallSDDocumentRejectionSts" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SalesContractValidityStartDate" type="xs:dateTime"/>
+                          <xs:element name="RetailAdditionalCustomerGrp10" type="xs:string" minOccurs="0"/>
+                          <xs:element name="IncotermsLocation2" type="xs:string" minOccurs="0"/>
+                          <xs:element name="IncotermsLocation1" type="xs:string" minOccurs="0"/>
+                          <xs:element name="PurchaseOrderByCustomer" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SalesOrganization" type="xs:string"/>
+                          <xs:element name="to_Item" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SalesOffice" type="xs:string" minOccurs="0"/>
+                          <xs:element name="CustomerPurchaseOrderType" type="xs:string"/>
+                          <xs:element name="CustomerPaymentTerms" type="xs:string" minOccurs="0"/>
+                          <xs:element name="ReferenceSDDocument" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SalesContractApprovalReason" type="xs:string" minOccurs="0"/>
+                          <xs:element name="LastChangeDate" type="xs:string" minOccurs="0"/>
+                          <xs:element name="SDDocumentReason" type="xs:string" minOccurs="0"/>
+                          <xs:element name="LastChangeDateTime" type="xs:dateTime"/>
+                          <xs:element name="SalesContractFollowUpAction" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="statusCode" type="xs:integer"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
