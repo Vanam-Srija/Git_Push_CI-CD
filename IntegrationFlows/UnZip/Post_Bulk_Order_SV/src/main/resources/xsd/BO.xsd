@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  
+  <xs:element name="ROOT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="select_response">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="row" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="BULK_ORDER_NO" type="xs:string"/>
+                    <xs:element name="BULKTYPE" type="xs:string" minOccurs="0"/>
+                    <xs:element name="START_DATE" type="xs:dateTime"/>
+                    <xs:element name="LASTEDTDT" type="xs:dateTime"/>
+                    <xs:element name="SAP_MATERIAL_ID" type="xs:string"/>
+                    <xs:element name="ORDER_QTY" type="xs:decimal"/>
+                    <xs:element name="UOM" type="xs:string"/>
+                    <xs:element name="CURRENCY" type="xs:string"/>
+                    <xs:element name="SOLDTO" type="xs:string"/>
+                    <xs:element name="STYLE_NO" type="xs:string"/>
+                    <xs:element name="COLCD" type="xs:string"/>
+                    <xs:element name="TEAMKEY" type="xs:string"/>
+                    <xs:element name="SIZ" type="xs:string"/>
+                    <xs:element name="LOGOCD" type="xs:string"/>
+                    <xs:element name="PACKNOTES" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
